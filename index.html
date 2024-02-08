@@ -8,9 +8,9 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="https://cdn.jsdelivr.net/npm/remixicon@4.0.0/fonts/remixicon.css" rel="stylesheet"/>
         <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
-        <link rel="stylesheet" type="text/css" href="loginreg.css" media="all">
         <link rel="icon" href="assets\12fox.ico">
-      </head>
+        <link rel="stylesheet" type="text/css" href="loginreg.css" media="all">
+    </head>
     <body>
 
       <nav class="nav">
@@ -33,33 +33,28 @@
         </div>
       </nav>
     
-      <div class="Login-box">
-		<h2>Registration</h2>
-	
-		<form action="/reg1" method="POST">
-			<div class="user-box">
-				<input type="text" name="username" id="" required="">
-				<label for="">Username</label>
-			</div>
+
+    <div class="Login-box">
+		<h2>Login</h2>
+    <div id="msg" style="color: #fff;"></div>
+        <form action="" id="loginForm">
             <div class="user-box">
-				<input type="email" name="email" id="" required="">
-				<label for="">Email</label>
-            </div>    
-			<div class="user-box">
-				<input type="password" name="password" id="" required="">
-				<label for="">Password</label>
-			</div>
+                <input type="text" name="username" id="loginUsername" required="">
+                <label for="">Username</label>
+            </div>
             <div class="user-box">
-				<input type="password" name="confirm" id="" required="">
-				<label for="">Confirm Password</label>
-			</div>
-      <button type="submit"  class="btn" value="SIGN IN">
-        <a href="index.html">SIGN UP</a>
-			</button>
-		</form>
+                <input type="password" name="password" id="loginPassword" required="">
+                <label for="">Password</label>
+            </div>
+            <button type="submit" class="btn" onclick="check()">SIGN IN</button>
+        </form>
 		
-		<div class="login_signup">Already have an account? <a href="index.html" id="signin">Sign in</a></div>
-	
+    
+		<div class="login_signup">Don't have an account? <a href="reg.html" id="signup">Signup</a></div>
       </div>
+    
+     
+      
     </body>
+    <script src="main.js"></script>
 </html>
